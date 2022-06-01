@@ -282,7 +282,7 @@ img {
 .team-card {
   background-color: var(--card-bcg-color);
   text-align: center;
-  box-shadow: --card-shadow;
+  box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
