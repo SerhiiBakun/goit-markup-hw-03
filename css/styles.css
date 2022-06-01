@@ -3,9 +3,9 @@
   --primary-text-color: #757575;
   --text-color-light: #ffffff;
   --accent-color: #2196f3;
-  --primary-bcg-color:#e5e5e5;
+  --primary-bcg-color:#ffffff;
   --card-bcg-color: #ffffff;
-  --btn-bcg-color: #ffffff;
+  --btn-bcg-color: #f5f4fA;
 }
 
 body {
@@ -33,6 +33,10 @@ ul {
   text-decoration: none;
 }
 .btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -68,12 +72,12 @@ ul {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid tomato;
 }
 
 /* Header */
-
-header {
-  background-color: #ffffff;
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* Main Navigation */
@@ -161,9 +165,16 @@ header {
 .hero {
   background-color: #2F303A;
   letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero .container {
+  padding-top: 200px;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -172,6 +183,8 @@ header {
   color: var(--text-color-light);
 }
 .hero .btn {
+padding: 10px 32px;
+
   font-weight: 700;
   line-height: 1.88;
   color: var(--text-color-light);
@@ -179,8 +192,7 @@ header {
 }
 .hero .btn:hover,
 .hero .btn:focus {
-  color: var(--title-text-color);
-  background-color: var(--text-color-light);
+  background-color: #188ce8;
 }
 
 /* Section */
