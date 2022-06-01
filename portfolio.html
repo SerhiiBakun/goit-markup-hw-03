@@ -11,28 +11,39 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!-- Шапка -->
 		<header class="header">
 			<!-- Головна навігація -->
-			<nav class="nav">
-				<a href="./index.html" lang="en" class="logo link">
-					Web
-					<span class="accent">Studio</span>
-				</a>
-				<ul class="nav-list list">
-					<li><a href="./index.html" class="nav-link link">Студия</a></li>
-					<li><a href="./portfolio.html" class="nav-link link current">Портфолио</a></li>
-					<li><a href="" class="nav-link link">Контакты</a></li>
+			<div class="main-nav container">
+				<nav class="nav">
+					<a href="./index.html" lang="en" class="logo link">
+						Web
+						<span class="accent">Studio</span>
+					</a>
+					<ul class="nav-list list">
+						<li class="nav-list-item"><a href="./index.html" class="nav-link link">Студия</a></li>
+						<li class="nav-list-item"><a href="./portfolio.html" class="nav-link link current">Портфолио</a></li>
+						<li class="nav-list-item"><a href="" class="nav-link link">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Контакти -->
+				<ul class="contact list">
+					<li class="contact-item">
+						<a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
+					</li>
+					<li class="contact-item"><a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a></li>
 				</ul>
-			</nav>
-			<!-- Контакти -->
-			<ul class="contact list">
-				<li><a href="mailto:info@devstudio.com" class="contacts-item link">info@devstudio.com</a></li>
-				<li><a href="tel:+380961111111" class="contacts-item link">+38 096 111 11 11</a></li>
-			</ul>
+			</div>
 		</header>
 		<!-- Портфоліо -->
 		<main class="portfolio">
