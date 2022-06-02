@@ -45,6 +45,7 @@ img {
 }
 .btn {
   display: inline-block;
+  padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
 
@@ -84,6 +85,11 @@ img {
   margin-right: auto;
   margin-left: auto;
   /* outline: 1px solid tomato; */
+}
+
+.section {
+  padding-top: var(--section-padding-size);
+  padding-bottom: var(--section-padding-size);
 }
 
 /* Header */
@@ -218,10 +224,6 @@ img {
 }
 
 /* Benefits */
-.benefits {
-  padding-top: var(--section-padding-size);
-  padding-bottom: var(--section-padding-size);
-}
 
 .benefits .list {
   display: flex;
@@ -249,8 +251,8 @@ img {
 
 /* Specialization */
 
-.specialization {
-  padding-bottom: var(--section-padding-size);
+.specialization.section {
+  padding-top: 0;
 }
 
 .specialization .section-title {
@@ -266,8 +268,6 @@ img {
 
 .team {
   background-color: #f5f4fA;
-  padding-top: var(--section-padding-size);
-  padding-bottom: var(--section-padding-size);
 }
 
 .team .section-title {
@@ -288,8 +288,8 @@ img {
 }
 
 .card-content {
-  padding-top: var(--card-set-gap);
-  padding-bottom: var(--card-set-gap);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -343,14 +343,45 @@ line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 /* Portfolio */
+
 
 /* Filter */
 
-/* Work */
-.work-item {
-background-color: var(--card-bcg-color);
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+} 
+
+/* Work */
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var (--card-set-gap));
+}
+
+.work-item {
+  background-color: var(--card-bcg-color);
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+  overflow: hidden;
+}
+
+.work-list .card-content {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+}
+
 .work-title {
     font-weight: 700;
     font-size: 18px;
@@ -358,6 +389,7 @@ background-color: var(--card-bcg-color);
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
+
 .work-text {
     font-size: 16px;
     line-height: 1.88;
