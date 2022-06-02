@@ -84,7 +84,6 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -183,10 +182,8 @@ img {
   background-color: #2F303A;
   letter-spacing: 0.06em;
   text-align: center;
-}
-
-.hero .container {
-  padding: 200px 252px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -216,6 +213,8 @@ img {
 /* Section */
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -226,12 +225,14 @@ img {
 /* Benefits */
 
 .benefits .list {
-  display: flex;
-  justify-content: space-between;  
+  display: flex;  
 }
 
 .benefits-item {
   max-width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-title {
@@ -255,12 +256,12 @@ img {
   padding-top: 0;
 }
 
-.specialization .section-title {
-  margin-bottom: 50px;
-}
 .specialization .list {
   display: flex;
-  justify-content: space-between;
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 
@@ -270,13 +271,8 @@ img {
   background-color: #f5f4fA;
 }
 
-.team .section-title {
-  margin-bottom: 50px;
-}
-
 .team .list {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-card {
@@ -285,6 +281,10 @@ img {
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .card-content {
@@ -309,9 +309,6 @@ img {
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -381,7 +378,8 @@ line-height: 1.71;
 
 .work-list .card-content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px #EEEEEE;
+  border-style: none solid solid solid;
 }
 
 .work-title {
